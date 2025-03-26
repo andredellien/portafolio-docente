@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto | Portfolio Programador</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			:root {
+				--primary: #1e1e2c;
+				--dark: #1e1e2c;
+				--light: #f5f5f7;
+				--gray: #d1d1d1;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body {
+				background-color: var(--light);
+				color: var(--dark);
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+
+			header {
+				margin-bottom: 3rem;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				color: var(--primary);
+			}
+
+			.subtitle {
+				font-size: 1.1rem;
+				opacity: 0.8;
+			}
+
+			.contact-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+
+			.contact-info {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease;
+			}
+
+			.contact-info:hover {
+				transform: translateY(-5px);
+			}
+
+			.contact-info h2 {
+				margin-bottom: 1.5rem;
+				color: var(--primary);
+			}
+
+			.info-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1rem;
+			}
+
+			.info-item i {
+				font-size: 1.2rem;
+				margin-right: 1rem;
+				color: var(--primary);
+			}
+
+			.contact-form {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			}
+
+			.form-group {
+				margin-bottom: 1.5rem;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 0.5rem;
+				font-weight: 600;
+			}
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 0.8rem;
+				border: 1px solid var(--gray);
+				border-radius: 5px;
+				font-size: 1rem;
+				transition: border 0.3s ease;
+			}
+
+			input:focus,
+			textarea:focus {
+				outline: none;
+				border-color: var(--primary);
+			}
+
+			textarea {
+				min-height: 150px;
+				resize: vertical;
+			}
+
+			.btn {
+				background: var(--primary);
+				color: white;
+				border: none;
+				padding: 0.8rem 2rem;
+				font-size: 1rem;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background 0.3s ease, transform 0.2s ease;
+			}
+
+			.btn:hover {
+				background: black;
+				transform: translateY(-2px);
+			}
+
+			.social-links {
+				display: flex;
+				gap: 1rem;
+				margin-top: 2rem;
+			}
+
+			.social-links a {
+				color: var(--dark);
+				font-size: 1.5rem;
+				transition: color 0.3s ease, transform 0.2s ease;
+			}
+
+			.social-links a:hover {
+				color: var(--primary);
+				transform: translateY(-3px);
+			}
+
+			@media (max-width: 768px) {
+				.contact-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-container">
+				<div class="logo">
+					<a href="./index.html"
+						><img src="/imagenes/perfil-cv.jpeg" alt=""
+					/></a>
+				</div>
+				<div class="nav-container">
+					<div>
+						<h4>ADAN CONDORI</h4>
+						<hr class="hr" />
+					</div>
+					<nav>
+						<ul class="navigation">
+							<li>
+								<a class="navigation-item" href="./proyectos.html">PROYECTOS</a>
+							</li>
+							<li>
+								<a class="navigation-item" href="./experiencia.html"
+									>EXPERIENCIA</a
+								>
+							</li>
+							<li>
+								<a class="navigation-item" href="./educacion.html">EDUCACION</a>
+							</li>
+							<li>
+								<a class="navigation-item" href="./habilidades.html"
+									>HABILIDADES</a
+								>
+							</li>
+							<li>
+								<a class="navigation-item" href="./contacto.html">CONTACTO</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<header>
+				<h1>Contáctame</h1>
+				<p class="subtitle">
+					¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad.
+				</p>
+			</header>
+
+			<div class="contact-grid">
+				<div class="contact-info">
+					<h3>Información de Contacto</h3>
+
+					<div class="info-item">
+						<i class="fas fa-envelope"></i>
+						<span>adan.condoric@gmail.com</span>
+					</div>
+
+					<div class="info-item">
+						<i class="fas fa-phone"></i>
+						<span>+59170402451</span>
+					</div>
+
+					<div class="info-item">
+						<i class="fas fa-map-marker-alt"></i>
+						<span>Santa Cruz, Bolivia</span>
+					</div>
+
+					<div class="social-links">
+						<a href="#" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+
+				<div class="contact-form">
+					<h2>Envíame un Mensaje</h2>
+					<form
+						action="https://formsubmit.co/tuemail@ejemplo.com"
+						method="POST"
+					>
+						<input type="hidden" name="_captcha" value="false" />
+						<input
+							type="hidden"
+							name="_next"
+							value="https://tudominio.com/gracias.html"
+						/>
+
+						<div class="form-group">
+							<label for="name">Nombre</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+
+						<div class="form-group">
+							<label for="subject">Asunto</label>
+							<input type="text" id="subject" name="subject" required />
+						</div>
+
+						<div class="form-group">
+							<label for="message">Mensaje</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+
+						<button type="submit" class="btn">Enviar Mensaje</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// Animación suave al hacer scroll
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					document.querySelector(this.getAttribute("href")).scrollIntoView({
+						behavior: "smooth",
+					});
+				});
+			});
+
+			// Efecto de carga
+			window.addEventListener("load", () => {
+				document.body.classList.add("loaded");
+			});
+		</script>
+	</body>
+</html>
